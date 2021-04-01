@@ -6,12 +6,12 @@
     $(window).load(function () {
         $(window).scroll(function () {
             if (!wpcf_init) {
-                pageProgressBar(wpcf_mpt.progressbar_content_selector);
+                wpcfPageProgressBar(wpcf_mpt.progressbar_content_selector);
                 wpcf_init = true;
             }
         });
     });
-    function pageProgressBar(target) {
+    function wpcfPageProgressBar(target) {
         var target_set = true;
         if (!target) {
             target = document;
