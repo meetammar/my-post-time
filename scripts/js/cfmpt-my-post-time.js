@@ -1,17 +1,17 @@
 /**
-* WPCF My Post Time Plugin by Ammar Ilays
+* CFMPT My Post Time Plugin by Ammar Ilays
 */
 (function ($) {
-    var wpcf_init = false;
+    var cfmpt_init = false;
     $(window).load(function () {
         $(window).scroll(function () {
-            if (!wpcf_init) {
-                wpcfPageProgressBar(wpcf_mpt.progressbar_content_selector);
-                wpcf_init = true;
+            if (!cfmpt_init) {
+                cfmptPageProgressBar(cfmpt_mpt.progressbar_content_selector);
+                cfmpt_init = true;
             }
         });
     });
-    function wpcfPageProgressBar(target) {
+    function cfmptPageProgressBar(target) {
         var target_set = true;
         if (!target) {
             target = document;
